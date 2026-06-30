@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #243042;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    border-bottom: 4px solid #f6a623;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-area img {
+    width: 74px;
+    height: 74px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.logo-area h1 {
+    color: #004a98;
+    font-size: 30px;
+}
+
+.logo-area p {
+    color: #58657a;
+    margin-top: 4px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 12px;
+}
+
+nav a {
+    color: #004a98;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #eaf3ff;
+    color: #f28c00;
+}
+
+.banner {
+    background: linear-gradient(120deg, #004a98, #0077c8);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 40px;
+    gap: 35px;
+}
+
+.banner-texto {
+    max-width: 560px;
+}
+
+.banner-texto h2 {
+    font-size: 44px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+    color: #b9c7d8;
+    text-shadow: 1px 1px 5px white;
+}
+
+.banner-texto p {
+    margin-bottom: 24px;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.botao-link,
+button {
+    background-color: #f6a623;
+    color: #ffffff;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.botao-link:hover,
+button:hover {
+    background-color: #d87c00;
+    transform: translateY(-2px);
+}
+
+.banner-img img {
+    width: 480px;
+    max-width: 100%;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.22);
+}
+
+.conteudo-principal {
+    display: flex;
+    padding: 40px;
+    gap: 30px;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.lado-esquerdo {
+    width: 70%;
+}
+
+aside {
+    width: 30%;
+}
+
+section,
+.info,
+.formulario {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 1px solid #dfe7f1;
+    box-shadow: 0 8px 20px rgba(36, 48, 66, 0.06);
+}
+
+section h2,
+.info h2,
+.formulario h2 {
+    color: #004a98;
+    margin-bottom: 18px;
+}
+
+section p {
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #f6a623;
+    margin-top: 18px;
+}
+
+.cardapio-box,
+.promocoes,
+.imagens {
+    display: flex;
+    gap: 20px;
+}
+
+.lista,
+.promo {
+    flex: 1;
+    background-color: #f7fafc;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #f6a623;
+}
+
+.lista h3,
+.promo h3 {
+    color: #004a98;
+    margin-bottom: 14px;
+}
+
+.lista ol,
+.lista ul {
+    margin-left: 22px;
+}
+
+.lista li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+mark {
+    background-color: #fff0a8;
+    color: #5b3b00;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+figure {
+    flex: 1;
+    text-align: center;
+    background-color: #f7fafc;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+figure img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #004a98;
+}
+
+.info-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 18px;
+}
+
+.info-item img {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.info p {
+    line-height: 1.5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #b9c7d8;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 3px solid #cfe6ff;
+    border-color: #004a98;
+}
+
+form button {
+    margin-top: 22px;
+    background-color: #004a98;
+}
+
+form button:hover {
+    background-color: #00366e;
+}
+
+footer {
+    background-color: #004a98;
+    color: #ffffff;
+    padding: 35px 40px 20px;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    max-width: 1220px;
+    margin: 0 auto 25px;
+}
+
+.footer-box div {
+    flex: 1;
+}
+
+.footer-box h3 {
+    margin-bottom: 10px;
+}
+
+.footer-box p {
+    line-height: 1.6;
+}
+
+.direitos {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.45);
+    padding-top: 15px;
+}
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 18px 22px;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+    }
+
+    .banner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 38px 22px;
+    }
+
+    .banner-texto h2 {
+        font-size: 34px;
+    }
+
+    .banner-img img {
+        width: 100%;
+        height: 260px;
+    }
+
+    .conteudo-principal {
+        flex-direction: column;
+        padding: 25px 18px;
+    }
+
+    .lado-esquerdo,
+    aside {
+        width: 100%;
+    }
+
+    .cardapio-box,
+    .promocoes,
+    .imagens,
+    .footer-box {
+        flex-direction: column;
+    }
+
+    .footer-box {
+        text-align: center;
+    }
+}
+
+@media (max-width: 520px) {
+    .logo-area {
+        align-items: flex-start;
+    }
+
+    .logo-area h1 {
+        font-size: 24px;
+    }
+
+    .logo-area p {
+        font-size: 14px;
+    }
+
+    nav a {
+        padding: 8px 9px;
+        font-size: 14px;
+    }
+
+    .banner-texto h2 {
+        font-size: 29px;
+    }
+}
